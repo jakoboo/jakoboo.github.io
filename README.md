@@ -1,3 +1,3 @@
 # jakoboo.github.io
 
-- [Prezentacje](/presentations)
+- [Prezentacje](presentations)
