@@ -6,4 +6,4 @@ git add --all
 git commit -m "Coś tam dodałem"
 git push
 
-echo "Resreshed! :)"
+echo "Refreshed! :)"
