@@ -120,7 +120,7 @@ a:focus {
 
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.25;
+    opacity: 0.1;
 
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
@@ -208,6 +208,48 @@ a:focus {
 
 #types h1 {
     font-size: 3em;
+}
+
+#applications ul {
+    padding: 0 0 10px 20px;
+}
+
+#counter {
+    text-align: center;
+}
+
+#counter h1 {
+    padding-bottom: 10px;
+}
+
+#counter img {
+    padding-top: 50px;
+    width: 100%;
+}
+
+#ct .container {
+    display: grid;
+    grid-template-columns: auto max-content;
+    align-items: center;
+}
+
+#ct img {
+    width: 500px;
+}
+
+#ct-images {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#ct-images img {
+    max-width: 90%;
+}
+
+#ct-images img:nth-child(1) {
+    max-width: 60%;
+    margin: auto;
 }
 
 #literature {}
