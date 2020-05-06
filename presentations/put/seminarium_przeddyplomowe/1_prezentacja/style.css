@@ -1,272 +1,180 @@
 body {
-    font-family: Montserrat, 'Open Sans', sans-serif;
+  font-family: Montserrat, 'Open Sans', sans-serif;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  background: rgb(215, 215, 215);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+  background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
 }
 
 h1 {
-    font-size: 4em;
-    text-align: center;
-    padding-bottom: 1em;
-    line-height: 1;
+  font-size: 4em;
+  text-align: center;
+  padding-bottom: 1em;
+  line-height: 1;
 }
 
 b,
 strong {
-    font-weight: bold
+  font-weight: bold;
 }
 
 i,
 em {
-    font-style: italic
+  font-style: italic;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.1em;
-    background: rgba(255, 255, 255, 0.5);
-    text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
-    border-radius: 0.2em;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.1em;
+  background: rgba(255, 255, 255, 0.5);
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+  border-radius: 0.2em;
 
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 a:hover,
 a:focus {
-    background: rgba(255, 255, 255, 1);
-    text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
+  background: rgba(255, 255, 255, 1);
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
 }
 
 .fallback-message {
-    font-family: sans-serif;
-    line-height: 1.3;
+  font-family: sans-serif;
+  line-height: 1.3;
 
-    width: 780px;
-    padding: 10px 10px 0;
-    margin: 20px auto;
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
 
-    border: 1px solid #E4C652;
-    border-radius: 10px;
-    background: #EEDC94;
+  border: 1px solid #e4c652;
+  border-radius: 10px;
+  background: #eedc94;
 }
 
 .fallback-message p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .impress-supported .fallback-message {
-    display: none;
+  display: none;
 }
 
 .quote {
-    font-size: 30px;
+  font-size: 30px;
 
-    font-style: italic;
+  font-style: italic;
 
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .quote::before {
-    content: "\""
+  content: '"';
 }
 
 .quote::after {
-    content: "\""
+  content: '"';
 }
 
 .quote .author {
-    font-size: .8rem;
-    font-style: normal;
+  font-size: 0.8rem;
+  font-style: normal;
 
-    color: rgb(80, 80, 80);
+  color: rgb(80, 80, 80);
 
-    position: absolute;
-    bottom: -2em;
-    right: 0;
+  position: absolute;
+  bottom: -2em;
+  right: 0;
 }
 
 .step {
-    position: relative;
-    width: 900px;
-    padding: 40px;
-    margin: 20px auto;
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  margin: 20px auto;
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 
-    font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .impress-not-supported .step {
-    display: inline-block;
+  display: inline-block;
 }
 
 .impress-enabled .step {
-    margin: 0;
-    opacity: 0.1;
+  margin: 0;
+  opacity: 0.1;
 
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .impress-enabled .step.active {
-    opacity: 1
+  opacity: 1;
 }
 
 #title {
-    padding: 0;
-    font-size: 10px;
-}
-
-#title .materials {
-    font-size: 50px;
-    position: absolute;
-    top: -30px;
-    left: 125px;
+  padding: 0;
+  font-size: 10px;
 }
 
 #title h1 {
-    font-size: 120px;
-    line-height: 180px;
-    padding-bottom: 0;
+  font-size: 4.5em;
+  line-height: 1.5em;
+  padding-bottom: 0;
 }
 
 #title .authors {
-    padding-top: 100px;
+  padding-top: 100px;
 
-    text-align: center;
-    font-size: 32px;
+  text-align: center;
+  font-size: 20px;
 }
 
 #title .class {
-    text-align: center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
-#scintillation {
-    text-align: center;
+#plan {
 }
 
-#scintillation img {
-    margin: 30px auto;
+#introduction {
 }
 
-#scintillators .container {
-    display: grid;
-    grid-template-columns: auto max-content;
-    align-items: center;
+#literature {
 }
 
-#scintillators p {}
-
-#scintillators img {
-    margin: 20px;
+#literature h1 {
 }
-
-#parameters {
-    height: 600px;
-}
-
-#parameters h1 {
-    font-size: 3em;
-    padding-bottom: 2em;
-}
-
-#parameters .container {
-    display: grid;
-    grid-template-columns: auto max-content;
-    align-items: center;
-}
-
-#parameters h2 {
-    font-weight: bold;
-}
-
-#types {
-    text-align: center;
-}
-
-#types h1 {
-    font-size: 3em;
-}
-
-#applications ul {
-    padding: 0 0 10px 20px;
-}
-
-#counter {
-    text-align: center;
-}
-
-#counter h1 {
-    padding-bottom: 10px;
-}
-
-#counter img {
-    padding-top: 50px;
-    width: 100%;
-}
-
-#ct .container {
-    display: grid;
-    grid-template-columns: auto max-content;
-    align-items: center;
-}
-
-#ct img {
-    width: 500px;
-}
-
-#ct-images {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-}
-
-#ct-images img {
-    max-width: 90%;
-}
-
-#ct-images img:nth-child(1) {
-    max-width: 60%;
-    margin: auto;
-}
-
-#literature {}
-
-#literature h1 {}
 
 #literature ul {
-    padding: 20px;
-    list-style-type: disc;
+  padding: 20px;
+  list-style-type: disc;
 }
 
 #literature ul li {
-    margin: 10px;
-}
-
-#overview {
-    display: none
+  margin: 10px;
 }
 
 /*
@@ -274,8 +182,8 @@ a:focus {
     `impress-on-` class.
 */
 .impress-on-overview .step {
-    opacity: 1;
-    cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
 }
 
 /*
@@ -283,14 +191,14 @@ a:focus {
     plugin that allows easy navigation between steps and autoplay.
 */
 .impress-enabled div#impress-toolbar {
-    position: fixed;
-    right: 1px;
-    bottom: 1px;
-    opacity: 0.6;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  opacity: 0.6;
 }
 
-.impress-enabled div#impress-toolbar>span {
-    margin-right: 10px;
+.impress-enabled div#impress-toolbar > span {
+  margin-right: 10px;
 }
 
 /*
@@ -298,55 +206,55 @@ a:focus {
     have it show only when you move/click/touch the mouse.
 */
 body.impress-mouse-timeout div#impress-toolbar {
-    display: none;
+  display: none;
 }
 
 /*
     In fact, we can hide the mouse cursor itself too, when mouse isn't used.
 */
 body.impress-mouse-timeout {
-    cursor: none;
+  cursor: none;
 }
 
 .hint {
-    /*
+  /*
         We hide the hint until presentation is started and from browsers not supporting
         impress.js, as they will have a linear scrollable view ...
     */
-    display: none;
+  display: none;
 
-    /*
+  /*
         ... and give it some fixed position and nice styles.
     */
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 200px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 200px;
 
-    background: rgba(0, 0, 0, 0.5);
-    color: #EEE;
-    text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #eee;
+  text-align: center;
 
-    font-size: 50px;
-    padding: 20px;
+  font-size: 50px;
+  padding: 20px;
 
-    z-index: 100;
+  z-index: 100;
 
-    /*
+  /*
         By default we don't want the hint to be visible, so we make it transparent ...
     */
-    opacity: 0;
+  opacity: 0;
 
-    /*
+  /*
         ... and position it below the bottom of the screen (relative to it's fixed position)
     */
-    -webkit-transform: translateY(400px);
-    -moz-transform: translateY(400px);
-    -ms-transform: translateY(400px);
-    -o-transform: translateY(400px);
-    transform: translateY(400px);
+  -webkit-transform: translateY(400px);
+  -moz-transform: translateY(400px);
+  -ms-transform: translateY(400px);
+  -o-transform: translateY(400px);
+  transform: translateY(400px);
 
-    /*
+  /*
         Now let's imagine that the hint is visible and we want to fade it out and move out
         of the screen.
 
@@ -356,37 +264,37 @@ body.impress-mouse-timeout {
 
         This way user will not see the hint moving down.
     */
-    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-    -moz-transition: opacity 1s, -moz-transform 0.5s 1s;
-    -ms-transition: opacity 1s, -ms-transform 0.5s 1s;
-    -o-transition: opacity 1s, -o-transform 0.5s 1s;
-    transition: opacity 1s, transform 0.5s 1s;
+  -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+  -moz-transition: opacity 1s, -moz-transform 0.5s 1s;
+  -ms-transition: opacity 1s, -ms-transform 0.5s 1s;
+  -o-transition: opacity 1s, -o-transform 0.5s 1s;
+  transition: opacity 1s, transform 0.5s 1s;
 }
 
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
 .impress-enabled .hint {
-    display: block
+  display: block;
 }
 
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
 .impress-on-bored .hint {
-    /*
+  /*
         We remove the transparency and position the hint in its default fixed
         position.
     */
-    opacity: 1;
+  opacity: 1;
 
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
 
-    /*
+  /*
         Now for fade in transition we have the oposite situation from the one
         above.
 
@@ -394,11 +302,11 @@ body.impress-mouse-timeout {
         into its correct position and after that we fade it in with opacity
         transition.
     */
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-    -moz-transition: opacity 1s 5s, -moz-transform 0.5s 4.5s;
-    -ms-transition: opacity 1s 5s, -ms-transform 0.5s 4.5s;
-    -o-transition: opacity 1s 5s, -o-transform 0.5s 4.5s;
-    transition: opacity 1s 5s, transform 0.5s 4.5s;
+  -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+  -moz-transition: opacity 1s 5s, -moz-transform 0.5s 4.5s;
+  -ms-transition: opacity 1s 5s, -ms-transform 0.5s 4.5s;
+  -o-transition: opacity 1s 5s, -o-transform 0.5s 4.5s;
+  transition: opacity 1s 5s, transform 0.5s 4.5s;
 }
 
 /*
@@ -423,17 +331,17 @@ body.impress-mouse-timeout {
     So use it wisely ... or don't use at all.
 */
 .impress-enabled {
-    pointer-events: none
+  pointer-events: none;
 }
 
 .impress-enabled #impress {
-    pointer-events: auto
+  pointer-events: auto;
 }
 
 .impress-enabled #impress-toolbar {
-    pointer-events: auto
+  pointer-events: auto;
 }
 
 .impress-enabled #impress-console-button {
-    pointer-events: auto
+  pointer-events: auto;
 }
