@@ -1,0 +1,167 @@
+\documentclass[a4paper,11pt]{extarticle}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usepackage[]{parskip}
+\usepackage{hyperref, wrapfig, float, amsmath, adjustbox, array, pdflscape, soul, color, extsizes}
+\usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{setspace}
+
+\renewcommand{\arraystretch}{2}
+\renewcommand{\contentsname}{Spis treści}
+\renewcommand{\refname}{Bibliografia}
+\renewcommand{\figurename}{Rys.}
+\renewcommand{\tablename}{Tab.}
+
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  margin=30mm,
+  bottom=30mm
+}
+
+\usepackage{graphicx}
+\usepackage[font=footnotesize,labelfont=bf,justification=centering]{caption}
+\usepackage{subcaption}
+\graphicspath{ {./images/}{../images/} }
+
+\newcommand{\mathcolorbox}[1]{
+  \begin{center}
+    \colorbox{yellow}{\(\displaystyle #1\)}
+  \end{center}
+}
+\newcommand{\pvec}[1]{
+  \vec{#1}\mkern2mu\vphantom{#1}
+}
+\newcommand{\angstrom}{\mbox{\normalfont\AA}}
+
+\begin{document}
+  \begin{titlepage}
+    \begin{center}
+      \begin{figure}[H]
+        \centering
+        \includegraphics[scale=.125]{logopp.png}
+      \end{figure}
+      \vspace*{.05\textheight}
+      \huge\textbf{Politechnika Poznańska}\\
+      \large\textbf{Wydział Inżynierii Materiałowej i Fizyki Technicznej}\\
+      \large\textbf{Fizyka Techniczna}\\
+      \vspace*{.2\textheight}
+      \huge\textbf{Detektory gazowe\\promieniowania jonizującego}\\
+      \vspace*{.025\textheight}
+      \large\textbf{Jakub Bąbelek\\jbbabelek@gmail.com\\(nr.\ albumu: 136454)}
+    \end{center}
+  \end{titlepage}
+
+  \doublespacing
+
+  %\tableofcontents
+  
+  \clearpage
+
+  \section{Wstęp}
+  Detektory gazowe promieniowania jonizującego to przyrządy wykorzystywane w
+  fizyce cząstek elementarnych do wykrywania obecności promieniowania jonizującego
+  oraz w ochronie radiologicznej do jego pomiaru. Wykorzystują one efekt jonizacji
+  w sensorze wypełnionym gazem. Jeżeli cząstka posiada wystarczającą energię do
+  zjonizowania atomu lub molekuły gazu, powstałe elektrony i jony powodują
+  mierzalny przepływ napięcia.
+
+  \subsection{Typy detektorów gazowych}
+  \begin{itemize}
+    \item Komora jonizacyjna
+    \item Licznik proporcjonalny
+    \item Licznik Geigera
+  \end{itemize}
+
+  \subsection{Licznik Geigera}
+  Instrument pomiarowy wykorzystywany do detekcji promieniowania jonizującego.
+  Powszechnie wykorzystywany w dozymetrii, ochronie radiologicznej, fizyce
+  eksperymentalnej czy energetyce jądrowej. Wykrywa promienie \( \alpha \),
+  \( \beta \) oraz promienie gamma. Zbudowany jest on z dwóch elektrod w szklanym
+  cylindrze wypełnionym mieszaniną gazów (najczęściej stosuje się mieszankę
+  argonu i par alkoholu). Trafiająca do wnętrza licznika cząstka wywołuje jonizację
+  atomów gazu a w efekcie wyładowanie lawinowe i powstaniem impulsu napięcia
+  kierowanym do układu pomiarowego. Zlicza on impulsy i przekształca je w sygnały
+  dźwiękowe, świetlne lub na wskazania wskaźnika wychyłowego lub cyfrowego.
+
+  Pomiary w doświadczeniu wykonane zostały przy pomocy licznika Geigera BOH-45.
+  Napięcie jego pracy obliczamy ze wzoru:
+  
+  \begin{equation}
+    U_{pracy} = U_{progu} + 100[V]
+    \label{eq:napiecie_pracy}
+  \end{equation}
+
+  \clearpage
+  \section{Dane i obliczenia}
+
+  \begin{table}[H]
+    \centering
+    \begin{adjustbox}{max width = \textwidth}
+    \begin{tabular}{cccc}
+      \toprule
+      \textbf{Napięcie \( [V] \)} & \textbf{Pomiar 1 \( [\frac{imp}{100s}] \)} & \textbf{Pomiar 2 \( [\frac{imp}{100s}] \)} & \textbf{Pomiar 3 \( [\frac{imp}{100s}] \)} \\
+      \midrule
+      400                       & 0                 & 0                 & 0                 \\
+      420                       & 0                 & 0                 & 0                 \\
+      440                       & 13624             & 13506             & 13835             \\
+      460                       & 14463             & 14385             & 14456             \\
+      480                       & 14650             & 14892             & 14734             \\
+      500                       & 14962             & 15071             & 14893             \\
+      520                       & 15050             & 15129             & 15284             \\
+      540                       & 15209             & 15416             & 15134             \\
+      560                       & 15511             & 15519             & 15478             \\
+      580                       & 15573             & 15590             & 15401             \\
+      600                       & 15801             & 15824             & 15364             \\
+      620                       & 15961             & 15706             & 15934             \\
+      \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+  \end{table}
+
+  \begin{table}[H]
+    \centering
+    \begin{adjustbox}{max width = \textwidth}
+    \begin{tabular}{ccc}
+      \toprule
+      \textbf{Napięcie \( [V] \)} & \textbf{Średnia ilość impulsów} & \textbf{Odchylenie standardowe} \\
+      \midrule
+      400 & 0     & 0   \\
+      420 & 0     & 0   \\
+      440 & 13655 & 220 \\
+      460 & 14435 & 57  \\
+      480 & 14759 & 162 \\
+      500 & 14975 & 119 \\
+      520 & 15154 & 157 \\
+      540 & 15253 & 193 \\
+      560 & 15503 & 29  \\
+      580 & 15521 & 138 \\
+      600 & 15663 & 342 \\
+      620 & 15867 & 185 \\
+      \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+  \end{table}
+
+  Wykorzystująć wzór (\ref{eq:napiecie_pracy}) obliczam \( U_{pracy} \) które wynosi
+  \( 540[V] \)
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{wykres.png}
+    \caption{Zależnosc średniej ilości impulsów od napięcia}
+    \label{fig:wykres}
+  \end{figure}
+
+  \section{Wnioski}
+  Pomiary pozwoliły ustalić napięcie pracy licznika które wynosi \( 540[V] \).
+  Widoczne plateau jest charakterystyczne dla licznika Geigera, formuje się po
+  osiągnięciu napięcia progowego.
+  Brak pomiarów dla wyższych wartości napięcia nie możemy określić jakości licznika.
+
+\end{document}
