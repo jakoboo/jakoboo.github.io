@@ -35,31 +35,67 @@
         <p class="class">Fizyka środowiska</p>
       </div>
 
-      <div id="dft" class="step" data-x="1500" data-y="-200" data-z="0">
+      <div
+        id="sun-img"
+        style="position: absolute; transform: translate3d(400px, -1100px, -200px); transform-style: preserve-3d;"
+      >
+        <img src="images/sun.png" />
+      </div>
+
+      <div id="sun" class="step" data-x="1500" data-y="-200" data-z="0">
         <h1>Słońce</h1>
 
         <div class="container">
           <p>
-            Gwiazda ciągu głównego o typie widmowym G (żółty karzeł) w centrum układu słonecznego.
+            Gwiazda ciągu głównego o typie widmowym G (żółty karzeł) w centrum układu słonecznego. Uformowała się około
+            4.6 miliarda lat temu.
           </p>
         </div>
       </div>
 
-      <div id="sun-img" style="transform: translate3d(400px, -1100px, -200px); transform-style: preserve-3d;">
-        <img src="images/sun.png" />
+      <div id="sun-combustion" class="step" data-x="1500" data-y="100" data-z="800">
+        <h1>Spalanie</h1>
+        <div class="container">
+          <p>
+            Słońce spala 600 milionów ton wodoru w ciągu każdej sekundy. Energia wytworzona w ten sposób we wnętrzu
+            słońca potrzebuje od 10 do 170 tysięcy lat na wydostanie się na jego powierzchnie i jest źródłem ciepła oraz
+            światla gwiazdy.
+          </p>
+        </div>
       </div>
 
       <div
-        id="literature"
-        class="step"
-        data-x="-1000"
-        data-y="600"
-        data-z="500"
-        data-rotate-x="-50"
-        data-rotate-y="-70"
-        data-rotate-z="40"
-        data-scale="1.5"
+        id="red_giant-img"
+        style="position: absolute; transform: translate3d(2000px, -600px, 800px); transform-style: preserve-3d;"
       >
+        <img src="images/red_giant.png" />
+      </div>
+
+      <div id="sun-death" class="step" data-x="1500" data-y="400" data-z="1600">
+        <h1>Śmierć</h1>
+        <div class="container">
+          <p>
+            Kiedy wodór w jądrze słońca zacznie się wypalać, a jego fuzja zwolni do punktu w którym gwiazda nie będzie w
+            równowadze hydrostatycznej, jądro słońca przejdzie proces gwałtownego kurczenia się podczas gdy jego
+            wierzchnie warstwy zaczną się rozszerzać tworząc czerwonego olbrzyma. Obliczenia wskazują, że słońce w tej
+            fazie będzie miało średnicę większą od orbity wenus a ziemia nie będzie nadawała się do życia.
+          </p>
+          <p>
+            Następną fazą jest odrzucenie przez gwiazdę wierzchnich warstw i przeistoczenie się w białego karła w którym
+            nie przebiega już fuzja wodoru. Gwiazda będzie się powoli ochładzać nadal ogrzana przez jeszcze niedawno
+            trwającą fuzję.
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="white_dwarf-img"
+        style="position: absolute; transform: translate3d(200px, 600px, 800px); transform-style: preserve-3d;"
+      >
+        <img src="images/white_dwarf.png" />
+      </div>
+
+      <div id="literature" class="step" data-x="2000" data-y="0" data-z="10000" data-rotate-x="-20" data-scale="1.5">
         <h1>Literatura</h1>
         <ul>
           <li>Williams, D.R. (1 July 2013). "Sun Fact Sheet". NASA Goddard Space Flight Center.</li>
