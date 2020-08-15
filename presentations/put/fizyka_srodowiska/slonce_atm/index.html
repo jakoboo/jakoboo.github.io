@@ -191,36 +191,134 @@
         <h1>Termosfera</h1>
         <div class="container">
           <p>
-            Warstwa gazów nazywana potocznie "powietrzem" otaczająca ziemię.
+            Druga najwyższa wartstwa ziemskiej atmosfery od 90km nad powierzchnią do ~600km. Jest ona częscią jonosfery
+            tj. zjonizowanej przez wiatr słoneczny części górnej atmosfery Ziemii.
+          </p>
+
+          <p>
+            Temperatura termosfery może wynosic nawet 1500 stopni Celsjusza, choć przez jej małą gęstość temperatura ta
+            nie ma dużego wpływu na przebywające tam obiekty.
+          </p>
+
+          <p>
+            W tej warstwie można zaobserwować zorze polarne oraz to w niej krąży Międzynarodowa Stacja Kosmiczna (ISS).
           </p>
         </div>
       </div>
+
+      <img
+        id="meteor-img"
+        style="
+          width: 200px;
+          position: absolute;
+          transform: translate3d(11000px, 7400px, 10000px);
+          transform-style: preserve-3d;
+        "
+        src="images/meteor.png"
+      />
 
       <div id="mesosphere" class="step" data-x="10900" data-y="7450" data-z="10000" data-scale=".3">
         <h1>Mezosfera</h1>
         <div class="container">
           <p>
-            Warstwa gazów nazywana potocznie "powietrzem" otaczająca ziemię.
+            Warstwa atmosfery znajdująca się na wysokości od 50 do 90km. Jest to najzimniejsze miejsce na Ziemii, jej
+            temperatura maleje z wysokością i w najzimniejszym punkcie wynosi ok. -85°C.
+          </p>
+
+          <p>
+            Skład tej warstwy atmosfery jest niemal identyczny z niższymi warstwami, różni się jednak znacznie niższą
+            gęstością oraz brakiem pary wodnej. Jest to najwyższa warstwa w której występują chmury w ziemskiej
+            atmosferze (tzw. Obłoki Srebrzyste). Spala się w niej również większość meteorów po wejściu w atmosferę
+            Ziemii.
+          </p>
+
+          <p>
+            Jest to najtrudniejszy obszar do badań atmosfery ponieważ nie docierają do tej warstwy żadne balony ani
+            samoloty a sztuczne satelity krążą ponad nią by uniknąć oporów powietrza.
           </p>
         </div>
       </div>
+
+      <img
+        id="plane-img"
+        style="
+          width: 200px;
+          position: absolute;
+          transform: translate3d(10950px, 7750px, 10000px);
+          transform-style: preserve-3d;
+        "
+        src="images/plane.png"
+      />
 
       <div id="stratosphere" class="step" data-x="10850" data-y="7700" data-z="10000" data-scale=".3">
         <h1>Stratosfera</h1>
         <div class="container">
           <p>
-            Warstwa gazów nazywana potocznie "powietrzem" otaczająca ziemię.
+            Druga najniższa warstwa atmosfery znajdująca się na wysokości od 10 do 50km. Zawiera warstwę ozonową co
+            powoduje dużą absorpcję promieniowania słonecznego i wzrost temperatury tej warstwy wraz z rosnącą
+            wysokością.
+          </p>
+
+          <p>
+            Ze względu na swój profil temperaturowy stratosfera jest bardzo stabilna i brak w niej silnych wiatrów,
+            turbulencji, rzadko występują chmury czy innych zjawiska pogodowe.
+          </p>
+
+          <p>
+            Jest to najwyższa warstwa atmosfery do której mogą dotrzeć samoloty z silnikami odrzutowymi (również
+            pasażerskie chcące uniknąć turbulencji)
           </p>
         </div>
       </div>
 
-      <div id="troposphere" class="step" data-x="10800" data-y="7950" data-z="10000" data-scale=".4">
+      <img
+        id="drone-img"
+        style="
+          width: 100px;
+          position: absolute;
+          transform: translate3d(10600px, 8000px, 10000px);
+          transform-style: preserve-3d;
+        "
+        src="images/drone.png"
+      />
+
+      <img
+        id="helicopter-img"
+        style="
+          width: 200px;
+          position: absolute;
+          transform: translate3d(10900px, 7900px, 10000px);
+          transform-style: preserve-3d;
+        "
+        src="images/helicopter.png"
+      />
+
+      <img
+        id="propeller_plane-img"
+        style="
+          width: 150px;
+          position: absolute;
+          transform: translate3d(10550px, 7830px, 10000px);
+          transform-style: preserve-3d;
+        "
+        src="images/propeller_plane.png"
+      />
+
+      <div id="troposphere" class="step" data-x="10800" data-y="7900" data-z="10000" data-scale=".3">
         <h1>Troposfera</h1>
         <div class="container">
           <p>
-            Warstwa gazów nazywana potocznie "powietrzem" otaczająca ziemię.
+            Najniższa warstwa atmosfery sięgająca do 17km w górę w pobliżu równika.
           </p>
         </div>
+      </div>
+
+      <div id="atm-overlook" class="step" data-x="10800" data-y="7500" data-z="10300">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        ~600km<br /><br /><br /><br /><br /><br /><br />
+        ~90km<br /><br /><br /><br /><br /><br /><br />
+        ~50km<br /><br /><br /><br /><br /><br /><br />
+        ~10km<br /><br /><br /><br /><br /><br /><br />
       </div>
 
       <div
@@ -230,11 +328,13 @@
         <img src="images/white_dwarf.png" />
       </div>
 
-      <div id="literature" class="step" data-x="2000" data-y="0" data-z="50000" data-rotate-x="-20" data-scale="1.5">
+      <div id="literature" class="step" data-x="8000" data-y="5000" data-z="50000" data-rotate-x="-20" data-scale="1.5">
         <h1>Literatura</h1>
         <ul>
           <li>Williams, D.R. (1 July 2013). "Sun Fact Sheet". NASA Goddard Space Flight Center.</li>
           <li>Dr. Tony Phillips. "How Round is the Sun?". NASA. 2 October 2008.</li>
+          <li>Zell, Holly (2015-03-02). "Earth's Upper Atmosphere". NASA.</li>
+          <li>Barry, R.G.; Chorley, R.J. (1971). Atmosphere, Weather and Climate. London: Menthuen & Co Ltd.</li>
         </ul>
       </div>
     </div>
