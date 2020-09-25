@@ -110,7 +110,48 @@
         <div class="container">
           <p>
             W chemii i modelowaniu molekularnym, pole siłowe to metoda pozwalająca na oszacowanie sił oddziaływania
-            atomów wewnątrz jak i pomiędzy molekułami
+            atomów wewnątrz jak i pomiędzy molekułami.
+          </p>
+          <p>
+            Funkcja oraz zestaw parametrów mają za zadanie opisanie energii potencjalnej układu, odgrywa niezbędną rolę
+            w dynamice molekularnej, mechanice molekularnej czy symulacji Monte Carlo jako przybliżenie rzeczywistej
+            funkcji potencjału.
+          </p>
+          <img src="./images/pole-silowe.png" />
+          <p>Rys.1 Pole siłowe używane jest do zminimalizowania energii oscylacyjnej w molekule etanu.</p>
+        </div>
+      </div>
+
+      <div id="pole-silowe-rodzaje" class="step" data-x="7500" data-y="0" data-z="0">
+        <h1>Pole siłowe (rodzaje)</h1>
+
+        <div class="container">
+          <p>
+            Przez lata opracowano wiele różnych pól siłowych znajdujących zastosowanie w symulacji wielu różnych układów
+            (CHARMM, AMBER), oraz takie zoptymalizowane do prowadzenia wyspecjalizowanych obliczeń (OPLS)
+          </p>
+          <p>Przykładowe rodzaje pól siłowych:</p>
+          <ol>
+            <li>MM2</li>
+            <li>CFF</li>
+            <li>ECEPP</li>
+            <li>AMBER, CHARMM, GROMOS</li>
+            <li>IFF</li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="pole-silowe-ograniczenia" class="step" data-x="9000" data-y="0" data-z="0">
+        <h1>Ograniczenia pól siłowych</h1>
+
+        <div class="container">
+          <p>
+            Wszystkie potencjały międzyatomowe oparte są na przybliżeniach i danych eksperymentalnych. Przez to określa
+            się je mianem "empirycznych". Przez tą niedokładność danych, jakość obliczeń może być zarówno lepsza od
+            obliczeń DFT lub opierać się jedynie na losowym zgadywaniu opartym na polu siłowym. Dokładne reprezentacje
+            wiązań chemicznych, połączone z danymi eksperymentalnymi mogą prowadzić do obliczeń potencjałow o większej
+            dokładności z użyciem dużo mniejszej liczby zewnętrznych parametrów i założeń w porównaniu do kwantowych
+            metod DFT - poziom takich obliczeń jest jednak silnie zależny od jakości danych źródłowych.
           </p>
         </div>
       </div>
@@ -135,6 +176,20 @@
             first-principles study".
             <br />
             <small>Chemical Physics Letters. Volume 643, January 2016, Pages 27-33</small>
+          </li>
+          <li>
+            Frenkel D.
+            <br />
+            Understanding molecular simulation: from algorithms to applications.
+            <br />
+            Academic Press (2007).
+          </li>
+          <li>
+            Leach A.
+            <br />
+            Molecular Modelling: Principles and Applications (2nd ed.).
+            <br />
+            Harlow: Prentice Hall (2001-01-30).
           </li>
         </ol>
       </div>
