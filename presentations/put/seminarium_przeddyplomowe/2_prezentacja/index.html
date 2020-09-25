@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="author" content="Jakub Bąbelek" />
+    <meta name="description" content="Prezentacja na 2 seminarium przeddyplomowe" />
+    <title>Seminarium przeddyplomowe #2 | Jakub Bąbelek</title>
+
+    <link href="../../../reset.css" rel="stylesheet" />
+    <link href="fonts/montserrat/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+      <p>
+        Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
+        version of this presentation.
+      </p>
+      <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress" data-autoplay="0">
+      <div id="title" class="step" data-x="0" data-y="0">
+        <h1 class="title">
+          Adsorbcja NO<sub>2</sub> oraz SO<sub>2</sub> na powierzchni domieszkowanego MoS<sub>2</sub>
+          <br />
+          badania DFT
+        </h1>
+
+        <p class="authors"><b>Jakub Bąbelek</b></p>
+        <p class="class">Seminarium przeddyplomowe FT sem.6</p>
+      </div>
+
+      <div id="plan" class="step" data-x="1500" data-y="0" data-z="0">
+        <h1>Plan prezentacji</h1>
+
+        <div class="container">
+          <ol type="1">
+            <li>Motywacja</li>
+            <li>Cel pracy</li>
+            <li>Opis prac wstępnych oraz planu badań</li>
+            <li>Pierwsze wyniki</li>
+            <li>Bibliografia</li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="motywacja" class="step" data-x="3000" data-y="0" data-z="0">
+        <h1>Dlaczego taki temat?</h1>
+
+        <div class="container">
+          <p>
+            MoS<sub>2</sub> jest fascynującym materiałem o wielu zastosowaniach, podobnie jak w grafenie, warstwowa
+            struktura disiarczku molibdenu znacząco różni się właściwościami od tych które możemy zbadać w większych
+            strukturach tego materiału. MoS<sub>2</sub> jest również dobrym katalizatorem w procesie elektrolizy wody co
+            może zostać wykorzystane w ogniwach paliwowych do produkcji wodoru. Monowarstwa disiarczku molibdenu
+            charakteryzuje się przerwą energetyczną wynoszącą 1,8eV co pozwala na użycie go jako materiału do budowy
+            tranzystorów czy fotodetektorów. Ponadto monowarstwy MoS<sub>2</sub> wykazują właściwości superprzewodnictwa
+            w temp. poniżej 9,4K.
+          </p>
+        </div>
+      </div>
+
+      <div id="cel-pracy" class="step" data-x="4500" data-y="0" data-z="0">
+        <h1>Cel pracy</h1>
+
+        <div class="container">
+          <p>
+            Celem pracy jest zbadanie stabilności termodynamicznej domieszkowanego MoS<sub>2</sub> a następnie zbadanie
+            wpływu domieszek na jego strukturę oraz aktywność chemiczną. Celem końcowym pracy jest znalezienie i
+            określenie domieszki MoS<sub>2</sub> pozwalającej na adsorbcję NO<sub>2</sub> oraz SO<sub>2</sub> z
+            atmosfery.
+          </p>
+        </div>
+      </div>
+
+      <div id="prace-wstepne-plan" class="step" data-x="6000" data-y="0" data-z="0">
+        <h1>Prace wstępne oraz plan badań</h1>
+
+        <div class="container">
+          <ol type="1">
+            <li>Zapoznanie się z pakietem Quantum ESPRESSO</li>
+            <li>Wykonanie próbnych obliczeń prostych układów metodą DFT</li>
+            <li>Obliczenie parametrów podstawowej komórki MoS<sub>2</sub> oraz jego struktury pasmowej metodą DFT</li>
+            <li>Wybranie odpowiedniego atomu domieszkowanego oraz obliczenie stabilności układu</li>
+            <li>
+              Wykonanie obliczeń wykorzystując komputer ICM do sprawdzenia adsorbcji NO<sub>2</sub> oraz SO<sub>2</sub>
+              w temp. do 600K
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="pierwsze-wyniki" class="step" data-x="7500" data-y="0" data-z="0">
+        <h1>Pierwsze wyniki</h1>
+
+        <div class="container">
+          Pomyślnie uzyskałem strukturę pasmową dla MoS<sub>2</sub>, wykorzystując do tego pakiet Quantum ESPRESSO.
+
+          <img src="./images/pasma_mos.png" />
+        </div>
+      </div>
+
+      <div
+        id="literature"
+        class="step"
+        data-x="-1000"
+        data-y="600"
+        data-z="500"
+        data-rotate-x="-50"
+        data-rotate-y="-70"
+        data-rotate-z="40"
+        data-scale="1.5"
+      >
+        <h1>Literatura</h1>
+        <ul>
+          <li>
+            Koshelev, K. (2015). "About density functional theory interpretation". <br />
+            <a href="https://arxiv.org/pdf/0812.2919.pdf" target="_blank">Link do pracy</a>
+          </li>
+          <li>
+            Kobayashi, K.; Yamauchi, J. (1995). "Electronic structure and scanning-tunneling-microscopy image of
+            molybdenum dichalcogenide surfaces". Physical Review B. 51 <br /><a
+              href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.51.17085"
+              >Link do pracy</a
+            >
+          </li>
+          <li>
+            Jiang, Jin-Wu; Park, Harold S.; Rabczuk, Timon (2013-08-12). "Molecular dynamics simulations of single-layer
+            molybdenum disulphide (MoS2): Stillinger-Weber parametrization, mechanical properties, and thermal
+            conductivity". Journal of Applied Physics. 114 <br /><a href="https://arxiv.org/pdf/1307.7072.pdf"
+              >Link do pracy</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="impress-toolbar"></div>
+
+    <div class="hint">
+      <p>
+        Use a spacebar or arrow keys to navigate. <br />
+        Press 'P' to launch speaker console.
+      </p>
+    </div>
+    <script>
+      if ('ontouchstart' in document.documentElement) {
+        document.querySelector('.hint').innerHTML = '<p>Swipe left or right to navigate</p>';
+      }
+    </script>
+    <script src="../../../impress.js/js/impress.js"></script>
+    <script>
+      impress().init();
+    </script>
+  </body>
+</html>
