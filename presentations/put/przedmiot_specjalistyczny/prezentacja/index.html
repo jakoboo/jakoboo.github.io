@@ -40,6 +40,7 @@
             <li>Przykład adsorpcji NO<sub>2</sub> i NH<sub>3</sub> na Si-MoS<sub>2</sub></li>
             <li>Pole siłowe</li>
             <li>Rodzaje pól siłowych</li>
+            <li>Ograniczenia pól siłowych</li>
           </ol>
         </div>
       </div>
@@ -50,7 +51,8 @@
         <div class="container">
           <p>
             Jest to adhezja atomów, jonów i molekuł na powierzchni. Proces ten prowadzi do utworzenia się cienkiej
-            warstwy adsorbatu na powierzchni adsorbentu. Zachodzi jedynie na powierzchni w przeciwieństwie do absorpcji.
+            warstwy adsorbatu na powierzchni adsorbentu. W przeciwieństwie do absorpcji (zachodzącej w całej objętości)
+            zachodzi jedynie na powierzchni.
           </p>
           <img src="./images/adsorpcja.png" />
         </div>
@@ -67,31 +69,26 @@
         </div>
       </div>
 
-      <div id="adsorpcja-przyklad-2" class="step przyklad" data-x="4500" data-y="550" data-z="0" data-rotate-x="20">
-        <h1>Przykład adsorpcji NO<sub>2</sub> i NH<sub>3</sub> na Si-MoS<sub>2</sub> [1]</h1>
-
+      <div id="adsorpcja-przyklad-2" class="step przyklad" data-x="4500" data-y="800" data-z="0" data-rotate-x="20">
         <div class="container">
-          <img src="./images/no2-nh3-wyniki.png" />
           <p>
             Wyniki przedstawiające adsorpcję NO<sub>2</sub> oraz NH<sub>3</sub> na powierzchni
             domieszkowanego/niedomieszkowanego MoS<sub>2</sub>.
           </p>
-          <p>
-            Długość wiązania (d<sub>N-O/N-H</sub>) odnosi się do długości wiązania N-O oraz N-H. Kąt
-            (&alpha;<sub>O-N-O/H-N-H</sub>) do kątów wiązania O-N-O oraz N-H-N. d<sub>X-Mo</sub> do długości wiązania
-            X(Al, Si, P, S) z Mo. d<sub>N/O-X</sub> to długość wiązania pomiędzy atomem N i X w przypadku NH<sub>3</sub>
-            oraz O i X w przypadku NO<sub>2</sub>. Dla niedomieszkowanego MoS<sub>2</sub> jest to długość wiązania N-S w
-            przypadku NO<sub>2</sub> oraz odległości atomu N od warstwy S w przypadku NH<sub>3</sub>. &mu; to wartość
-            momentu magnetycznego. E<sub>ad</sub> przedstawia energię adsorpcji, a &Delta;Q transfer ładunku (wartość
-            ujemna oznacza transfer z MoS<sub>2</sub>
+          <img src="./images/no2-nh3-wyniki.png" />
+          <p style="font-size: 1.2rem">
+            d<sub>N-O/N-H</sub> - długości wiązania N-O oraz N-H, &alpha;<sub>O-N-O/H-N-H</sub> kąt wiązania O-N-O oraz
+            N-H-N. d<sub>X-Mo</sub> - długość wiązania X(Al, Si, P, S) z Mo. d<sub>N/O-X</sub> - długość wiązania
+            pomiędzy atomem N i X w przypadku NH<sub>3</sub> oraz O i X w przypadku NO<sub>2</sub>. Dla
+            niedomieszkowanego MoS<sub>2</sub> jest to długość wiązania N-S w przypadku NO<sub>2</sub> oraz odległości
+            atomu N od warstwy S w przypadku NH<sub>3</sub>. &mu; - moment magnetyczny. E<sub>ad</sub> - energia
+            adsorpcji, &Delta;Q - transfer ładunku (wartość ujemna oznacza transfer z MoS<sub>2</sub>
             do molekuł gazu)
           </p>
         </div>
       </div>
 
-      <div id="adsorpcja-przyklad-3" class="step przyklad" data-x="4500" data-y="1200" data-z="200" data-rotate-x="40">
-        <h1>Przykład adsorpcji NO<sub>2</sub> i NH<sub>3</sub> na Si-MoS<sub>2</sub> [1]</h1>
-
+      <div id="adsorpcja-przyklad-3" class="step przyklad" data-x="4500" data-y="1600" data-z="200" data-rotate-x="40">
         <div class="container">
           <p>
             Kiedy NO<sub>2</sub> oraz NH<sub>3</sub> adsorbowane są na powierzchni domieszkowanego MoS<sub>2</sub>,
@@ -118,11 +115,46 @@
             funkcji potencjału.
           </p>
           <img src="./images/pole-silowe.png" />
-          <p>Rys.1 Pole siłowe używane jest do zminimalizowania energii oscylacyjnej w molekule etanu.</p>
+          <p style="font-size: 1.2rem">
+            Pole siłowe używane jest do zminimalizowania energii oscylacyjnej w molekule etanu.
+          </p>
         </div>
       </div>
 
-      <div id="pole-silowe-rodzaje" class="step" data-x="7500" data-y="0" data-z="0">
+      <div id="pole-silowe-adsorpcja" class="step" data-x="7500" data-y="0" data-z="0">
+        <h1 style="font-size: 7rem">Pole siłowe a adsorpcja</h1>
+
+        <p>
+          Pola siłowe takie jak UFF lub DREIDING są powszechnie używane w symulowaniu adsorpcji i dyfuzji molekuł na
+          związkach metaloorganicznych (MOF), ich dokładność jednak nie jest dobrze zbadana.
+        </p>
+        <p>
+          Dzięki obliczeniu energii oddziaływań dużej liczby konfiguracji adsorbatu za pomocą DFT, uzyskuje się pola
+          siłowe pozwalające przewidzieć takie parametry jak izoterma adsorpcji, ciepło adsorpcji czy właściwości
+          dyfuzyjne alkanów i alkenów.
+        </p>
+      </div>
+
+      <div id="pole-silowe-adsorpcja2" class="step" data-x="7500" data-y="600" data-z="0" data-rotate-x="20">
+        <p>
+          Dzięki potraktowaniu gęstości elektronowej jako pole siłowe pomiędzy atomami, możemy znacznie przyspieszyć
+          czas obliczeń przez zastosowanie dużo mniej wymagających modeli używając jedynie dynamiki Newtonowskiej do
+          opisania oddziaływań międzyatomowych[3].
+        </p>
+
+        <div>
+          <img src="./images/biointerface.gif" style="width: 20%; display: inline-block; vertical-align: middle" />
+          <div style="width: 70%; display: inline-block; vertical-align: middle">
+            <p>
+              Powstają metody wykorzystania takiego sposobu obliczeń do badania interakcji powierzchni z molekułami
+              biologicznymi (wiązania peptydów z powierzchnią ciała stałego), dotychczasowe metody nie pozwalały na
+              dokładny opis biointerfejsów w tej skali[4].
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="pole-silowe-rodzaje" class="step" data-x="9000" data-y="0" data-z="0" data-rotate-x="0">
         <h1>Pole siłowe (rodzaje)</h1>
 
         <div class="container">
@@ -141,7 +173,7 @@
         </div>
       </div>
 
-      <div id="pole-silowe-ograniczenia" class="step" data-x="9000" data-y="0" data-z="0">
+      <div id="pole-silowe-ograniczenia" class="step" data-x="10500" data-y="0" data-z="0">
         <h1>Ograniczenia pól siłowych</h1>
 
         <div class="container">
@@ -168,7 +200,7 @@
         data-scale="1.5"
       >
         <h1>Literatura</h1>
-        <ol type="1">
+        <ol type="1" style="font-size: 1.5rem">
           <li>
             Hao Luoa, Yijiang Caoa, Jing Zhoub, Jumeng Fenga, Jiamu Caoc, Hai Guod
             <br />
@@ -176,6 +208,27 @@
             first-principles study".
             <br />
             <small>Chemical Physics Letters. Volume 643, January 2016, Pages 27-33</small>
+          </li>
+          <li>
+            Ambarish R. Kulkarni and David S. Sholl
+            <br />
+            DFT-Derived Force Fields for Modeling Hydrocarbon Adsorption in MIL-47(V)
+            <br />
+            <small>Langmuir 2015 31 (30), 8453-8468</small>
+          </li>
+          <li>
+            Van Gunsteren W, Berendsen H. 1990.
+            <br />
+            Computer simulation of molecular dynamics: methodology, applications and perspectives in chemistry.
+            <br />
+            <small>Angew. Chem. Int. Ed. Engl. 29, 992–1023.</small>
+          </li>
+          <li>
+            Lewis Martin, Marcela M. Bilek, Anthony S. Weiss, Serdar Kuyucak
+            <br />
+            Force fields for simulating the interaction of surfaces with biological molecules
+            <br />
+            <small>Interface Focus. 2016 Feb 6; 6(1): 20150045.</small>
           </li>
           <li>
             Frenkel D.
